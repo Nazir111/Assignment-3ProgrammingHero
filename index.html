@@ -47,13 +47,17 @@
             color: #737373;
             font-size: .9rem;
         }
+
+        .form-bgPhoto {
+            background-image: url(assets/bg.jpg);
+        }
     </style>
 
 </head>
 
 <body class="manrope-font">
     <!-- Header -->
-    <header class="m-12">
+    <header class="m-12 bg-gray-50">
         <!-- Nav bar -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -89,8 +93,13 @@
                     <li><a class="dark3">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-
+            <div class="navbar-end space-x-3">
+                <div class="bg-white shadow-2xl rounded-full">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
                 <!--common Button div -->
                 <div class="btn bg-[#ABEF5F] p-3 rounded-3xl">
                     <a>Book Consult</a>
@@ -103,7 +112,7 @@
 
         <!-- Header banner -->
         <div>
-            <div>
+            <div class="justify-items-center">
                 <img src="assets/banner.png" alt="">
             </div>
 
@@ -209,7 +218,7 @@
 
         <!-- Work Process section -->
         <div>
-            <div class="p-36 space-y-4 text-center items-center">
+            <div class="space-y-4 text-center items-center">
                 <!-- btn -->
                 <div class="btn bg-white shadow-2xl p-2 rounded-2xl">
                     <i class="fa-solid fa-arrow-right rounded-full p-1 text-black text-l"></i>
@@ -267,8 +276,6 @@
                     </div>
                 </div>
             </div>
-
-
             <!-- End of card -->
         </div>
         <!-- End Work Process section -->
@@ -290,14 +297,14 @@
             </div>
             <!-- card section1 -->
             <div>
-                <div class="grid lg:grid-cols-2">
+                <div class="grid lg:grid-cols-2 m-10 gap-x-3">
 
-                    <div class="hero bg-base-200 min-h-screen">
+                    <div class="hero bg-base-200  w-auto  rounded-2xl p-3 border-2 border-gray-300">
                         <div class="hero-content flex-col lg:flex-row">
                             <img src="assets/img1.png" class="max-w-sm rounded-lg shadow-2xl" />
                             <div>
-                                <h1 class="text-5xl font-bold">Commercial</h1>
-                                <p class="py-6">
+                                <h1 class="text-2xl font-bold">Commercial</h1>
+                                <p class="py-3 dark3">
                                     The barn house captivates with its blend of rustic charm
                                     and modern. The barn house captivates with its blend of
                                     rustic charm and modern.
@@ -312,21 +319,21 @@
                         </div>
                     </div>
 
-                    <div>
-                        <img src="assets/img2.png" alt="">
+                    <div class="rounded-2xl p-3 border-2 border-gray-300">
+                        <img class="w-full " src="assets/img2.png" alt="">
                     </div>
 
                 </div>
                 <!-- card section 2 -->
-                <div class="grid lg:grid-cols-3">
-                    <div><img src="assets/img3.png" alt=""></div>
+                <div class="grid lg:grid-cols-3 m-10 gap-x-3">
+                    <div class="rounded-2xl p-3 border-2 border-gray-300"><img class="w-full" src="assets/img3.png" alt=""></div>
 
-                    <div class="hero bg-base-200 min-h-screen">
+                    <div class="hero bg-base-200 rounded-2xl border-2 border-gray-300">
                         <div class="hero-content flex-col lg:flex-row">
                             <img src="assets/img4.png" class="max-w-sm rounded-lg shadow-2xl" />
                             <div>
-                                <h1 class="text-5xl font-bold">Commercial</h1>
-                                <p class="py-6">
+                                <h1 class="text-2xl font-bold">Commercial</h1>
+                                <p class="py-3">
                                     The barn house captivates with its blend of rustic charm
                                     and modern. The barn house captivates with its blend of
                                     rustic charm and modern.
@@ -341,7 +348,7 @@
                         </div>
                     </div>
 
-                    <div><img src="assets/img5.png" alt=""></div>
+                    <div class="rounded-2xl p-3 border-2 border-gray-300"><img class="w-full" src="assets/img5.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -354,12 +361,10 @@
                     <!-- btn -->
                     <div class="btn bg-green-50 shadow-2xl p-2 rounded-2xl">
                         <i class="fa-solid fa-arrow-right rounded-full p-1 text-black text-l"></i>
-                        <a>Explore our Latest works</a>
+                        <a>Rinterio News</a>
                     </div>
-                    <h1 class="text-3xl font-bold">Our Latest Portfolio</h1>
-                    <p class="dark3">The barn house captivates with its blend of rustic
-                        charm and modern sophistication, featuring
-                        weathered wood, sleek metal accents.</p>
+                    <h1 class="text-3xl font-bold">Read Our Articles and News</h1>
+                    <p class="dark3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-1 p-10">
@@ -443,10 +448,10 @@
         </section>
         <!-- End Article and news section -->
 
-        <!-- Next Project section -->
-        <section class="">
+        <!-- form section -->
+        <section class="form-bgPhoto ">
             <!-- header div -->
-            <div class=" space-y-3 text-center items-center m-3">
+            <div class=" space-y-3 text-center items-center m-3 mt-4 pt-5">
                 <!-- btn -->
                 <div class="btn bg-green-50 shadow-2xl p-2 rounded-2xl">
                     <i class="fa-solid fa-arrow-right rounded-full p-1 text-black text-l"></i>
@@ -470,7 +475,7 @@
 
                 <textarea class="textarea textarea-bordered mx-10 w-4/5"
                     placeholder="Write Your Message here"></textarea>
-<br>
+                <br>
                 <!--common Button div -->
                 <div class="btn bg-[#ABEF5F] p-2 rounded-2xl w-5/6 ml-10">
                     <a>Send mail</a>
@@ -480,10 +485,38 @@
             </div>
 
         </section>
-        <!-- End Next Project section -->
+        <!-- End form section -->
     </main>
 
     <!-- Footer section -->
+    <footer class="navbar bg-black h-52 items-center flex-col mt-10">
+
+
+        <div>
+            <i class="fa-solid fa-arrow-right rounded-full p-1 bg-[#ABEF5F] text-black text-l -rotate-45"></i>
+            <a class="btn btn-ghost p-2 text-xl text-white">Rinterio</a>
+        </div>
+        <div>
+            <p class="dark3">The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered wood, sleek metal accents</p>
+        </div>
+        <div>
+            <ul class="menu menu-horizontal px-1 text-white">
+                <li><a> Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!--common Button div -->
+        <div class="btn bg-[#ABEF5F] p-3 rounded-3xl">
+            <a>Book Consult</a>
+            <i class="fa-solid fa-arrow-right rounded-full p-1 bg-black text-white text-l -rotate-45"></i>
+        </div>
+
+    </footer>
 </body>
 
 </html>
